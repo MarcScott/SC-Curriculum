@@ -1,0 +1,85 @@
+#+STARTUP:indent
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="css/styles.css"/>
+#+HTML_HEAD_EXTRA: <link href='http://fonts.googleapis.com/css?family=Ubuntu+Mono|Ubuntu' rel='stylesheet' type='text/css'>
+#+HTML_HEAD_EXTRA: <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js" type="text/javascript"></script>
+#+HTML_HEAD_EXTRA: <script src="js/navbar.js" type="text/javascript"></script>
+#+OPTIONS: f:nil author:nil num:1 creator:nil timestamp:nil toc:nil html-style:nil
+
+#+TITLE: The Door Buzzer
+#+AUTHOR: Marc Scott
+
+#+BEGIN_HTML
+  <div class="github-fork-ribbon-wrapper left">
+    <div class="github-fork-ribbon">
+      <a href="https://github.com/MarcScott/7-SC-Buzzer">Fork me on GitHub</a>
+    </div>
+  </div>
+<div id="stickyribbon">
+    <ul>
+      <li><a href="1_Lesson.html">Week1</a></li>
+      <li><a href="2_Lesson.html">Week2</a></li>
+      <li><a href="3_Lesson.html">Week3</a></li>
+      <li><a href="4_Lesson.html">Week4</a></li>
+      <li><a href="5_Lesson.html">Week5</a></li>
+      <li><a href="6_Lesson.html">Week6</a></li>
+      <li><a href="assessment.html">Assessment</a></li>
+
+    </ul>
+  </div>
+#+END_HTML
+* Transistors
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: activity
+:END:
+** Learn It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: learn
+:END:
+- In this project you're going to make an electronic door buzzer, like the one shown below.
+** Learn It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: learn
+:END:
+- To activate the buzzer and the LED, we're going to use a circuit component called a transistor.
+- In this lesson you'll learn what a transistor is and how it can be used as an electronic switch
+** Learn It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: learn
+:END:
+[[file:http://upload.wikimedia.org/wikipedia/commons/0/0e/Transistors-white.jpg]]
+- Transistors come in many shapes and sizes, but they all have one thing in common.
+** Research It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: research
+:END:
+
+- All transistors have three legs - a collector, a base and an emitter.
+- The type of transistor you're going to be using is a BC547B, which looks like this.
+[[file:img/bc547b.png]]
+- Use online resources to help you label the picture above, to show which legs are which.
+** Try It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: try
+:END:
+- The circuit symbol for a transistor looks like this.
+[[file:http://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/BJT_symbol_NPN.svg/200px-BJT_symbol_NPN.svg.png]]
+- The legs have been labelled B,C and E.
+- Now look at the simulation below. This shows a transistor connected to a 5V Power supply, with an LED.
+[[file:img/transistor.gif]]
+- Connected to the =base= of the transistor is a signal generator.
+- The signal generator produces a varying voltage, going from 0 up to 5V and then back down again.
+- The voltmeter will tell you the voltage being produced by the signal generator.
+** Badge It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: badge
+:END:
+- Try and explain what is causing the LED to switch on and off again.
+- Make sure your are using the following terms:
+  1. Base
+  2. Collector
+  3. Emitter
+  4. Signal Generator
+  5. LED
+  6. Current
+  7. Voltage
+

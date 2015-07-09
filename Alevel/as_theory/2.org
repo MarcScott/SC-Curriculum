@@ -1,0 +1,176 @@
+#+STARTUP:indent
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="css/styles.css"/>
+#+HTML_HEAD_EXTRA: <link href='http://fonts.googleapis.com/css?family=Ubuntu+Mono|Ubuntu' rel='stylesheet' type='text/css'>
+#+BEGIN_COMMENT
+#+STYLE: <link rel="stylesheet" type="text/css" href="css/styles.css"/>
+#+STYLE: <link href='http://fonts.googleapis.com/css?family=Ubuntu+Mono|Ubuntu' rel='stylesheet' type='text/css'>
+#+END_COMMENT
+#+OPTIONS: f:nil author:nil num:1 creator:nil timestamp:nil 
+#+TITLE: Input Transducers
+#+AUTHOR: Stephen Brown
+
+#+BEGIN_HTML
+<div class="github-fork-ribbon-wrapper left">
+<div class="github-fork-ribbon">
+<a href="https://github.com/stsb11/as_theory">Fork me on GitHub</a>
+</div>
+</div>
+<center>
+<img src='img/ldr_1.jpg' width=20%>
+</center>
+#+END_HTML
+
+* COMMENT Use as a template
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: activity
+:END:
+** Learn It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: learn
+:END:
+
+** Research It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: research
+:END:
+
+** Design It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: design
+:END:
+
+** Build It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: build
+:END:
+
+** Test It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: test
+:END:
+
+** Run It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: run
+:END:
+
+** Document It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: document
+:END:
+
+** Code It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: code
+:END:
+
+** Program It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: program
+:END:
+
+** Try It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: try
+:END:
+
+** Badge It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: badge
+:END:
+
+** Save It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: save
+:END:
+
+e* Introduction
+[[file:img/pic.jpg]]
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: intro
+:END:
+** What are PIC chips?
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: research
+:END:
+Peripheral Interface Controllers are small silicon chips which can be programmed to perform useful tasks.
+In school, we tend to use Genie branded chips, like the C08 model you will use in this project. Others (e.g. PICAXE) are available.
+PIC chips allow you connect different inputs (e.g. switches) and outputs (e.g. LEDs, motors and speakers), and to control them using flowcharts.
+Chips such as these can be found everywhere in consumer electronic products, from toasters to cars. 
+
+While they might not look like much, there is more computational power in a single PIC chip used in school than there was in the space shuttle that went to the moon in the 60's!
+** When would I use a PIC chip?
+Imagine you wanted to make a flashing bike light; using an LED and a switch alone, you'd need to manually push and release the button to get the flashing effect. A PIC chip could be programmed to turn the LED off and on once a second.
+In a board game, you might want to have an electronic dice to roll numbers from 1 to 6 for you. 
+In a car, a circuit is needed to ensure that the airbags only deploy when there is a sudden change in speed, AND the passenger is wearing their seatbelt, AND the front or rear bumper has been struck. PIC chips can carry out their instructions very quickly, performing around 1000 instructions per second - as such, they can react far more quickly than a person can. 
+* Introduction
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: activity
+:END:
+- You need to be able to know about electronic transducers, and to be able to design different circuits using appropriate sensors depending on the scenario you are presented with. The key components to achieve these are listed on this page.
+** Definition
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: learn
+:END:
+- An input transducer is one which converts an input (e.g. temperature, light level, sound) into either a voltage level or a resistance (which can be converted into a voltage level). 
+** Components
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: try
+:END:
+- Sound: Microphone. 
+- Light: LDR, IR receiver or photo-transistor. 
+- Pressure: Micro-switch (digital) or quantum tunnelling composite (analogue). 
+- Rotary movement: Rotary Potentiometer
+- Linear movement: Switch, linear potentiometer. 
+- Strain: Strain gauge. 
+- Moisture: Darlington pair with probes
+- Vibration: Motion sensor
+- Magnetism: Reed switch (digital) or Hall effect sensor (analogue)
+- Temperature: Thermistor or Digital thermometer
+
+* Practice questions
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: activity
+:END:
+** Past Paper questions
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: learn
+:END:
+- *June 2009 SCT1.* (a) (i) Describe the operation of a Light Dependant Resistor (LDR). Make reference to both its sensing and resistance properties. /(3 marks)/
+- (ii) Describe the operation of a Strain Gauge. Make reference to both its sensing and resistance properties in your answer. /(3 marks)/
+- (b) An LDR with a resistance of 5kΩ at a light level of 10 lux is connected in series with a 47kΩ resistor to create a potential divider shown in Figure 1. The supply voltage is 6v. /(Lux is a measure of illuminance)/. Given that…
+#+BEGIN_HTML
+<math display='block'>
+<msub><mi>V</mi> <mn>OUT</mn></msub>
+<mo>=</mo>
+<mfrac>
+<mrow>
+<msub><mi>R</mi><mn>2</mn></msub>
+</mrow>
+<mrow>
+<mo>(</mo><msub><mi>R</mi><mn>1</mn></msub><mo>+</mo><msub><mi>R</mi><mn>2</mn></msub><mo>)</mo>
+</mrow>
+</mfrac>
+<mo>&#x2062;<!-- &InvisibleTimes; --></mo>
+<msub><mi>V</mi><mn>IN</mn></msub>
+</math>
+#+END_HTML
+- Calculate V_OUT. /(4 marks)/
+- (c) Design a circuit which includes the potential divider shown in part (b) and will: -
+    - light a green LED when the light level rises above 10 lux
+    - light a red LED when the light level falls below 10 lux. 		/(12 marks)/
+- (d) The circuit in part (c) could be housed in a case made from a metal.
+    - (i) Name a suitable specific metal for the circuit casing. /(1 mark)/
+    - (ii) Explain your choice making reference to two properties of the material. /(4 marks)/
+- (e) With the aid of annotated sketches, describe a suitable manufacturing process for a casing using the metal you identified in part (d)(i). /(7 marks)/
+- (f) Quality Control and Quality Assurance are two procedures used by manufacturing industries. Describe three differences between Quality Control and Quality Assurance. /(3× 2 marks)/
+
+
+- *June 2009, Q3.* A switch is classified as DPDT. Explain, with the aid of a diagram, how this switch works.	/(4 marks)/
+
+
+- *June 2011, Q1.* Explain the following terms and give an example for each.
+    - (a) An Input transducer /(2 marks)/
+    - (b) An Output transducer /(2 marks)/
+
+[[file:index.html][Return to homepage]]

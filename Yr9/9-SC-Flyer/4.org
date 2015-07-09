@@ -1,0 +1,186 @@
+#+STARTUP:indent
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="css/styles.css"/>
+#+HTML_HEAD_EXTRA: <link href='http://fonts.googleapis.com/css?family=Ubuntu+Mono|Ubuntu' rel='stylesheet' type='text/css'>
+#+BEGIN_COMMENT
+#+STYLE: <link rel="stylesheet" type="text/css" href="css/styles.css"/>
+#+STYLE: <link href='http://fonts.googleapis.com/css?family=Ubuntu+Mono|Ubuntu' rel='stylesheet' type='text/css'>
+#+END_COMMENT
+#+OPTIONS: f:nil author:nil num:1 creator:nil timestamp:nil 
+#+TITLE: Building the Drag Car
+#+AUTHOR: Clinton Delport
+
+#+BEGIN_HTML
+<div class=ribbon>
+<a href="https://github.com/stsb11/gcse_theory">Fork me on GitHub</a>
+</div>
+<center>
+<imgzz src='' width=33%>
+</center>
+#+END_HTML
+
+* COMMENT Use as a template
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: activity
+:END:
+** Learn It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: learn
+:END:
+
+** Research It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: research
+:END:
+
+** Design It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: design
+:END:
+
+** Build It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: build
+:END:
+
+** Test It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: test
+:END:
+
+** Run It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: run
+:END:
+
+** Document It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: document
+:END:
+
+** Code It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: code
+:END:
+
+** Program It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: program
+:END:
+
+** Try It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: try
+:END:
+
+** Badge It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: badge
+:END:
+
+** Save It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: save
+:END:
+
+e* Introduction
+[[file:img/pic.jpg]]
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: intro
+:END:
+** What are PIC chips?
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: research
+:END:
+Peripheral Interface Controllers are small silicon chips which can be programmed to perform useful tasks.
+In school, we tend to use Genie branded chips, like the C08 model you will use in this project. Others (e.g. PICAXE) are available.
+PIC chips allow you connect different inputs (e.g. switches) and outputs (e.g. LEDs, motors and speakers), and to control them using flowcharts.
+Chips such as these can be found everywhere in consumer electronic products, from toasters to cars. 
+
+While they might not look like much, there is more computational power in a single PIC chip used in school than there was in the space shuttle that went to the moon in the 60's!
+** When would I use a PIC chip?
+Imagine you wanted to make a flashing bike light; using an LED and a switch alone, you'd need to manually push and release the button to get the flashing effect. A PIC chip could be programmed to turn the LED off and on once a second.
+In a board game, you might want to have an electronic dice to roll numbers from 1 to 6 for you. 
+In a car, a circuit is needed to ensure that the airbags only deploy when there is a sudden change in speed, AND the passenger is wearing their seatbelt, AND the front or rear bumper has been struck. PIC chips can carry out their instructions very quickly, performing around 1000 instructions per second - as such, they can react far more quickly than a person can. 
+* Introduction
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: activity
+:END:
+- To be build a successful Drag racer, you will need the following parts.
+[[./img/w4img1.jpg]]
+** Wheels
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: build
+:END:
+- building the wheels.
+[[./img/w4img2.jpg]]
+- Take the 2 pieces of 3mm threaded bar and the 8 sets of wheels (4 front and 4 back).
+- Put a nut on each side of the threaded bar, this will hold the first wheel in place.
+[[./img/w4img3.jpg]]
+- You now need to place a small amount of PVA glue on each wheel and then use the nuts to tighten them in place while the glue dries.
+[[./img/w4img4.jpg]]
+[[./img/w4img5.jpg]]
+[[./img/w4img6.jpg]]
+[[./img/w4img7.jpg]]
+** Pulleys
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: build
+:END:
+- Assemble the driven pulley the same way as the wheels, place a small amount of PVA glue on the insideof the pulleys and then onto the threaded bar. Make sure you put the pulley in the middle of the 2 guides. 
+[[./img/w4img8.jpg]]
+[[./img/w4img9.jpg]]
+[[./img/w4img10.jpg]]
+** Motor mount and Rear Axle Mounts
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: build
+:END:
+- Now put the motor together and rear axle mounts together.
+[[./img/w4img11.jpg]]
+[[./img/w4img12.jpg]]
+- Place the rear axle mounts in place and then put the lower level axle mounts with spacer and screw together. You will need to countersink the holes on the side of the screw head.
+[[./img/w4img13.jpg]]
+[[./img/w4img14.jpg]]
+[[./img/w4img15.jpg]]
+Make sure you place the elastic band on while you are fitting the axle, or you will need to take it apart at the end to fit it.
+[[./img/w4img17.png]]
+[[./img/w4img18.jpg]]
+- You need to put the driver pulley on first before mounting the motor. Make sure you put the back of the motor on the table when pushing on the pulley, this will prevent the back of the motor coming off.
+[[./img/w4img19.jpg]]
+- Now put a little bit of glue on the motor mounts and glue them in place with the motor in place. You can now put the cable tie on to secure the motor.
+[[./img/w4img20.jpg]]
+
+** Front Axle Mounts
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: build
+:END:
+- Follow the same process as the rear axle mount to mount the front axles mounts.
+[[./img/w4img21.jpg]]
+[[./img/w4img22.jpg]]
+[[./img/w4img23.jpg]]
+[[./img/w4img24.jpg]]
+[[./img/w4img25.jpg]]
+** Electrical connection
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: build
+:END:
+- Mount the battery holder, with the wire pointing away from the motor.
+[[./img/w4img27.jpg]]
+[[./img/w4img28.jpg]]
+- You will need to mount the switch before soldering the wire, as the switch is mounted on the other side of the chassis.
+[[./img/w4img29.jpg]]
+[[./img/w4img30.jpg]]
+[[./img/w4img31.jpg]]
+- You can now solder the wires together. You will need a 10cm piece of black multi-strand wire.
+[[./img/w4img32.jpg]]
+- Finally, use some hot glue to neaten up the wiring (be careful not to burn yourself).
+[[./img/w4img33.jpg]]
+** Final Drive and Body
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: build
+:END:
+- Mount the elastic band...
+[[./img/w4img35.jpg]]
+- And fit the aerodynamic cover to test the fit.
+[[./img/w4img36.jpg]]
+- You will now take home the Drag racer body and decorate as you wish.
+
+  
